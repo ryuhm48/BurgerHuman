@@ -1,0 +1,155 @@
+﻿html, body {
+  background: #55efc4;
+  margin: 0px;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+#menu_button {
+  margin: 5px;
+  padding: 3px 0px;
+  box-sizing: border-box;
+  height: 36px;
+  width: 36px;
+  display: block;
+}
+#menu_button div {
+  width: 30px;
+  height: 2px;
+  margin: 6px auto;
+  background: #cd6133;
+  border-radius: 5px;
+  transition: .5s;
+}
+#menu_button div:nth-child(1) {
+  margin-top: 5px;
+}
+#menu_button div:nth-child(2) {
+  background: red;
+}
+#menu_button.close div:nth-child(1) {
+  transform: translate(0, 8px) rotate(-45deg);
+}
+#menu_button.close div:nth-child(2) {
+  opacity: 0;
+}
+#menu_button.close div:nth-child(3) {
+  transform: translate(0, -8px) rotate(45deg);
+}
+
+nav {
+  z-index: 100;
+  position: relative;
+  max-width: 130px;
+  transition: .5s;
+  background: #55efc4;
+  margin-left: -140px;
+  box-shadow: 1px 1px 2px #666;
+}
+nav div {
+  padding: 15px;
+  transition: .3s;
+}
+nav div:hover {
+  background: #00b894;
+}
+nav.view {
+  margin-left: 0;
+}
+
+#container {
+  z-index: 10;
+  position: absolute;
+  top: 46px;
+  left: 0px;
+  width: 100%;
+  height: calc(100% - 40px);
+  box-sizing: border-box;
+}
+#container .page {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: none;
+  overflow: auto;
+}
+#container .page.view {
+  display: block;
+}
+
+#burger {
+  float: right;
+  width: 300px;
+  background: linear-gradient(#cd6133 0%, #cd6133 30px, rgba(0, 0, 0, 0) 31px, rgba(0, 0, 0, 0) calc(100% - 30px), #cd6133 calc(100% - 29px));
+  min-height: 10px;
+  border-radius: 50px 50px 30px 30px;
+  padding: 30px 0px;
+}
+#burger div {
+  width: 100%;
+  height: 30px;
+  border: 5px solid #55efc4;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+#burger div.bun {
+  background: #cd6133;
+}
+#burger div.lettuce {
+  background: #badc58;
+}
+#burger div.onion {
+  background: #fff;
+}
+#burger div.tomato {
+  background: #f00;
+}
+#burger div.egg {
+  background: linear-gradient(to right, #fff 40%, #f1c40f 40%, #f1c40f 60%, #fff 60%);
+}
+#burger div.patty {
+  background: #cc8e35;
+  height: 30px;
+}
+#burger div.mustard {
+  background: #f9ca24;
+  height: 15px;
+}
+#burger div.ketchup {
+  background: #eb2f06;
+  height: 15px;
+}
+#burger div.mayo {
+  background: #F8EFBA;
+  height: 15px;
+}
+#burger div.over {
+  opacity: 0.5;
+}
+
+#form {
+  float: left;
+}
+#form div {
+  padding: 5px;
+}
+#form div label {
+  width: 100px;
+  display: inline-block;
+}
+#form div input {
+  font-size: 20px;
+  width: 40px;
+}
+
+
+#burger {
+  position: relative;
+  margin: 5em auto;
+  width: $size;
+}
+#burger div{
+	
+  position: relative;
+}
